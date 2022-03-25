@@ -16,9 +16,9 @@ ckptPath="/data3/mengtial/ModelZoo/mmdet/faster_rcnn_r50_fpn_1x_coco_20200130-04
 mode=${1:-test}
 
 
-python "det_time.py" \
+python det/det_time.py \
 	--mode $mode \
 	--data-prefix "$dataPrefix" \
-	--config "faster_rcnn_r50_fpn_1x_coco.py" \
+	--config "det/faster_rcnn_r50_fpn_1x_coco.py" \
 	--checkpoint "$ckptPath" \
 	
