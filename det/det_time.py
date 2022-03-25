@@ -184,7 +184,7 @@ def main():
             if i >= warmup_iter:
                 if (i + 1) % args.log_interval == 0:
                     rt_ms = s2ms(sum(model_time[warmup_iter:])/(len(model_time) - warmup_iter))
-                    print(f'test: {i + 1:>4}/{args.n_iter}, runtime: {rt_ms:4g} ms')
+                    print(f'test: {i + 1:>4}/{args.n_iter}, runtime (averaged): {rt_ms:4g} ms')
 
             if (i + 1) == args.n_iter:
                 break
@@ -232,7 +232,7 @@ def main():
             if i >= warmup_iter:
                 if (i + 1) % args.log_interval == 0:
                     rt_ms = s2ms(sum(model_time[warmup_iter:])/(len(model_time) - warmup_iter))
-                    print(f'train: {i + 1:>4}/{args.n_iter}, iter time: {rt_ms:4g} ms')
+                    print(f'train: {i + 1:>4}/{args.n_iter}, iter time (averaged): {rt_ms:4g} ms')
 
             if (i + 1) == args.n_iter:
                 break
