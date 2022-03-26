@@ -28,3 +28,4 @@ python -m llcv.tools.test \
 	--inf-latency \
 	--shuffle \
 	--timing-iter 5000 \
+	--timing-warmup-iter 50 \

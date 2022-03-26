@@ -23,8 +23,9 @@ python -m llcv.tools.train_lat \
     --resume-epoch 90 \
 	--n-epoch 91 \
     --no-resume-load \
-    --epoch-iter 500 \
 	--wd 1e-4 \
 	--batch-size 64 \
     --n-worker 0 \
     --seed 0 \
+    --epoch-iter 500 \
+	--timing-warmup-iter 50 \
