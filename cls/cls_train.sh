@@ -6,12 +6,13 @@
 # Update your data prefix here
 dataDir="/data3/mengtial"
 ssdDir="/scratch/mengtial"
+expName=DLGPUBench
 
 # here we measure the latency after the model has
 # converged using PyTorch's pretrained weights
 
 python -m llcv.tools.train_lat \
-	--exp-dir "${dataDir}/Exp/ImageNet/train_lat/DLGPUBench" \
+	--exp-dir "${dataDir}/Exp/ImageNet/train_lat/${expName}" \
 	--dataset ImageNet \
 	--data-root "${ssdDir}/ILSVRC2012" \
 	--task ClsTask \
