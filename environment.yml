@@ -9,6 +9,6 @@ dependencies:
 - torchvision
 - pip
 - pip:
-  - llcv==0.0.6
+  - llcv==0.0.8
   - https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/mmcv_full-1.4.6-cp38-cp38-manylinux1_x86_64.whl
   - mmdet==2.21.0

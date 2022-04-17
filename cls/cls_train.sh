@@ -8,9 +8,14 @@ dataDir="/data3/mengtial"
 ssdDir="/scratch/mengtial"
 expName=DLGPUBench
 
+# We observe empirically that by limiting the threads,
+# timing becomes more stable, and the model runs faster
+export MKL_NUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+export OMP_NUM_THREADS=1
+
 # here we measure the latency after the model has
 # converged using PyTorch's pretrained weights
-
 python -m llcv.tools.train_lat \
 	--exp-dir "${dataDir}/Exp/ImageNet/train_lat/${expName}" \
 	--dataset ImageNet \
@@ -29,3 +34,5 @@ python -m llcv.tools.train_lat \
     --seed 0 \
     --epoch-iter 500 \
 	--timing-warmup-iter 50 \
+	--to-cuda-before-task \
+	

@@ -3,15 +3,6 @@ Detection Timing
 Code adapted from the mmdetection train and test scripts
 '''
 
-# We empirically observe that by limiting the threads,
-# timing becomes more stable, and sometimes the model
-# runs slightly faster
-
-import os
-os.environ['MKL_NUM_THREADS'] = '1'
-os.environ['NUMEXPR_NUM_THREADS'] = '1'
-os.environ['OMP_NUM_THREADS'] = '1'
-
 import argparse, time, logging
 
 import torch
