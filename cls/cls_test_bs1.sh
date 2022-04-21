@@ -26,12 +26,12 @@ python -m llcv.tools.test \
 		depth=50 \
 		pretrained=pytorch \
 	--test-init \
-	--batch-size 64 \
+	--batch-size 1 \
 	--n-worker 0 \
     --seed 0 \
-	--log-interval 50 \
+	--log-interval 200 \
 	--inf-latency \
 	--shuffle \
-	--timing-iter 500 \
+	--timing-iter 5000 \
 	--timing-warmup-iter 50 \
 	--to-cuda-before-task \

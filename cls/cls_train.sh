@@ -32,6 +32,7 @@ python -m llcv.tools.train_lat \
 	--batch-size 64 \
     --n-worker 0 \
     --seed 0 \
+	--log-interval 50 \
     --epoch-iter 500 \
 	--timing-warmup-iter 50 \
 	--to-cuda-before-task \
