@@ -4,6 +4,12 @@
 
 (Note that the above is a screenshot of the benchmark. Please visit the [project page](https://mtli.github.io/gpubench/) for the <i>latest version</i> and an <i>interactive experience</i>.)
 
+![#fc4903](https://via.placeholder.com/15/fc4903/000000?text=+) Helps to estimate the runtime of algorithms on a different GPU
+
+![#4abdab](https://via.placeholder.com/15/4abdab/000000?text=+) Measures GPU processing speed independent of GPU memory capacity
+
+![#F7B733](https://via.placeholder.com/15/F7B733/000000?text=+) Contains adjustable weightings through interactive UIs
+
 This repo contains the timing scripts used in the GPU benchmark. This latency-based benchmark is designed to compare algorithms with runtime reported under different GPUs, and it also serves as a GPU purchasing guide. Please check out the [project page](https://mtli.github.io/gpubench/) for the complete benchmark with detailed descriptions. This page documents instructions on how to run the code and the changelog of the benchmark.
 
 
